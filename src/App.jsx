@@ -4,14 +4,14 @@ import TinderCard from 'react-tinder-card'
 import { motion, AnimatePresence } from 'framer-motion'
 
 // Importando as imagens
-import odontoImg from '/public/images/odonto.png'
-import handImg from '/public/images/hand.png'
-import happyImg from '/public/images/happy.png'
-import rosesImg from '/public/images/roses.jpg'
-import heartImg from '/public/images/heart.jpg'
-import funImg from '/public/images/fun.jpg'
-import smileImg from '/public/images/smile.jpg'
-import cuteImg from '/public/images/cute.jpg'
+import odontoImg from './assets/odonto.png'
+import handImg from './assets/hand.png'
+import happyImg from './assets/happy.png'
+import rosesImg from './assets/roses.jpg'
+import heartImg from './assets/heart.jpg'
+import funImg from './assets/fun.jpg'
+import smileImg from './assets/smile.jpg'
+import cuteImg from './assets/cute.jpg'
 
 const moments = [
   {
