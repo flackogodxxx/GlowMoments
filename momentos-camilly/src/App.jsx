@@ -3,26 +3,33 @@ import styled, { keyframes } from 'styled-components'
 import TinderCard from 'react-tinder-card'
 import { motion, AnimatePresence } from 'framer-motion'
 
+// Importe as imagens diretamente para garantir que sejam empacotadas corretamente
+import roses from '../public/images/roses.jpg'
+import heart from '../public/images/heart.jpg'
+import fun from '../public/images/fun.jpg'
+import smile from '../public/images/smile.jpg'
+import cute from '../public/images/cute.jpg'
+
 const moments = [
   {
     id: 1,
-    image: '/images/roses.jpg'
+    image: roses
   },
   {
     id: 2,
-    image: '/images/heart.jpg'
+    image: heart
   },
   {
     id: 3,
-    image: '/images/fun.jpg'
+    image: fun
   },
   {
     id: 4,
-    image: '/images/smile.jpg'
+    image: smile
   },
   {
     id: 5,
-    image: '/images/cute.jpg'
+    image: cute
   }
 ]
 
