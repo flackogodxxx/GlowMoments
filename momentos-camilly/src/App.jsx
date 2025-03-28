@@ -6,42 +6,42 @@ import { motion, AnimatePresence } from 'framer-motion'
 const moments = [
   {
     id: 1,
-    image: '/images/odonto.png',
+    image: './images/odonto.png',
     emoji: '🦷'
   },
   {
     id: 2,
-    image: '/images/hand.png',
+    image: './images/hand.png',
     emoji: '🤝'
   },
   {
     id: 3,
-    image: '/images/happy.png',
+    image: './images/happy.png',
     emoji: '😄'
   },
   {
     id: 4,
-    image: '/images/roses.jpg',
+    image: './images/roses.jpg',
     emoji: '🌹'
   },
   {
     id: 5,
-    image: '/images/heart.jpg',
+    image: './images/heart.jpg',
     emoji: '💖'
   },
   {
     id: 6,
-    image: '/images/fun.jpg',
+    image: './images/fun.jpg',
     emoji: '✨'
   },
   {
     id: 7,
-    image: '/images/smile.jpg',
+    image: './images/smile.jpg',
     emoji: '😊'
   },
   {
     id: 8,
-    image: '/images/cute.jpg',
+    image: './images/cute.jpg',
     emoji: '💝'
   }
 ]
@@ -391,7 +391,7 @@ const IntroContainer = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('/images/hand.png');
+    background-image: url('./images/hand.png');
     background-size: cover;
     background-position: center;
     opacity: 0.25;
