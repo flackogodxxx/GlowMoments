@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Momentos Glows</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <div class="header">
+      <h1>Momentos Glows</h1>
+    </div>
+    
+    <div id="typing-container" class="typing-container">
+      <span id="typing-text" class="typing-text"></span>
+    </div>
+    
+    <div id="card-container" class="card-container hidden">
+      <div id="cards">
+        <!-- Cards will be inserted here by JavaScript -->
+      </div>
+      <div class="buttons-container">
+        <button id="nope-button" class="button nope">✗</button>
+        <button id="like-button" class="button like">♥</button>
+      </div>
+    </div>
+    
+    <div id="end-message" class="end-message hidden">
+      <h2>❤️</h2>
+      <p>Todos os nossos momentos juntos são especiais!</p>
+      <div class="button-container">
+        <button id="restart-button" class="restart-button">Ver novamente</button>
+        <button id="whatsapp-button" class="whatsapp-button">Mandar mensagem</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
