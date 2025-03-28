@@ -3,45 +3,55 @@ import styled, { keyframes } from 'styled-components'
 import TinderCard from 'react-tinder-card'
 import { motion, AnimatePresence } from 'framer-motion'
 
+// Importando as imagens
+import odontoImg from '/images/odonto.png'
+import handImg from '/images/hand.png'
+import happyImg from '/images/happy.png'
+import rosesImg from '/images/roses.jpg'
+import heartImg from '/images/heart.jpg'
+import funImg from '/images/fun.jpg'
+import smileImg from '/images/smile.jpg'
+import cuteImg from '/images/cute.jpg'
+
 const moments = [
   {
     id: 1,
-    image: './images/odonto.png',
+    image: odontoImg,
     emoji: '🦷'
   },
   {
     id: 2,
-    image: './images/hand.png',
+    image: handImg,
     emoji: '🤝'
   },
   {
     id: 3,
-    image: './images/happy.png',
+    image: happyImg,
     emoji: '😄'
   },
   {
     id: 4,
-    image: './images/roses.jpg',
+    image: rosesImg,
     emoji: '🌹'
   },
   {
     id: 5,
-    image: './images/heart.jpg',
+    image: heartImg,
     emoji: '💖'
   },
   {
     id: 6,
-    image: './images/fun.jpg',
+    image: funImg,
     emoji: '✨'
   },
   {
     id: 7,
-    image: './images/smile.jpg',
+    image: smileImg,
     emoji: '😊'
   },
   {
     id: 8,
-    image: './images/cute.jpg',
+    image: cuteImg,
     emoji: '💝'
   }
 ]
@@ -391,7 +401,7 @@ const IntroContainer = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('./images/hand.png');
+    background-image: url(${handImg});
     background-size: cover;
     background-position: center;
     opacity: 0.25;
