@@ -1,9 +1,13 @@
 {
+  "version": 2,
   "routes": [
     { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/index.html" }
+    { "src": "/(.*)", "dest": "/" }
   ],
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "framework": "vite"
+  "framework": "vite",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
 }

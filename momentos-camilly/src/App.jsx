@@ -3,33 +3,32 @@ import styled, { keyframes } from 'styled-components'
 import TinderCard from 'react-tinder-card'
 import { motion, AnimatePresence } from 'framer-motion'
 
-// Importe as imagens diretamente para garantir que sejam empacotadas corretamente
-import roses from '../public/images/roses.jpg'
-import heart from '../public/images/heart.jpg'
-import fun from '../public/images/fun.jpg'
-import smile from '../public/images/smile.jpg'
-import cute from '../public/images/cute.jpg'
-
+// Definindo imagens como URLs base64 para garantir que funcionem em qualquer ambiente
 const moments = [
   {
     id: 1,
-    image: roses
+    // Placeholder para a imagem de rosas
+    image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDQwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSI0MDAiIGZpbGw9IiNmZjZiNmIiLz48dGV4dCB4PSIxNTAiIHk9IjIwMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSJ3aGl0ZSI+Um9zZXM8L3RleHQ+PC9zdmc+'
   },
   {
     id: 2,
-    image: heart
+    // Placeholder para a imagem de coração
+    image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDQwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSI0MDAiIGZpbGw9IiNmZjZiNmIiLz48cGF0aCBkPSJNMjAwIDI3NUwxNTAgMjI1QzEyNSAyMDAgMTI1IDE1MCAxNTAgMTI1QzE3NSAxMDAgMjI1IDEwMCAyNTAgMTI1QzI3NSAxNTAgMjc1IDIwMCAyNTAgMjI1TDIwMCAyNzVaIiBmaWxsPSJ3aGl0ZSIvPjwvc3ZnPg=='
   },
   {
     id: 3,
-    image: fun
+    // Placeholder para a imagem de diversão
+    image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDQwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSI0MDAiIGZpbGw9IiMyOWMzYmUiLz48dGV4dCB4PSIxNTAiIHk9IjIwMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSJ3aGl0ZSI+RnVuPC90ZXh0Pjwvc3ZnPg=='
   },
   {
     id: 4,
-    image: smile
+    // Placeholder para a imagem de sorriso
+    image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDQwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMjAwIiBjeT0iMjAwIiByPSIxNTAiIGZpbGw9IiNmZmQ5M2QiLz48Y2lyY2xlIGN4PSIxNTAiIGN5PSIxNTAiIHI9IjIwIiBmaWxsPSJibGFjayIvPjxjaXJjbGUgY3g9IjI1MCIgY3k9IjE1MCIgcj0iMjAiIGZpbGw9ImJsYWNrIi8+PHBhdGggZD0iTTE1MCAyNTBDMTUwIDI1MCAyMDAgMzAwIDI1MCAyNTAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMTAiLz48L3N2Zz4='
   },
   {
     id: 5,
-    image: cute
+    // Placeholder para a imagem fofa
+    image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDQwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSI0MDAiIGZpbGw9IiMyMWQwN2MiLz48dGV4dCB4PSIxNTAiIHk9IjIwMCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSJ3aGl0ZSI+Q3V0ZTwvdGV4dD48L3N2Zz4='
   }
 ]
 
